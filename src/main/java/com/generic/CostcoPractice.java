@@ -13,9 +13,9 @@ public class CostcoPractice {
 	public void getMouseHover() {
 		WebDriverManager.firefoxdriver().setup();
 		WebDriver driver = new FirefoxDriver();
-		
-		driver.navigate().to("https://www.costco.com/"); //BaseConfig.getConfigValue("COSTCO_URL")
 		driver.manage().window().maximize();
+		
+		driver.navigate().to("https://www.costco.com/"); //BaseConfig.getConfigValue("COSTCO_URL")		
 		
 		MasterPageFactory mpf = new MasterPageFactory(driver);
 		Actions ac = new Actions(driver);

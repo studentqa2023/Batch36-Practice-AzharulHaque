@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class PracticeTestngMethods {
 	
-	@Test(priority=0, groups={"Smoke"})
+	@Test(priority=0, groups={"Smoke"}, invocationCount = 5) //invocation count means how many times I want to run the method!
 	public void login() {
 		System.out.println("This is login method.");
 	}
